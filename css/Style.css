@@ -2,7 +2,7 @@ body {
     background-image: url(../resources/pradera.jpg);
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-size: 100%;
+    background-size: cover;
 }
 
 h1 {
@@ -16,14 +16,19 @@ h1 {
     padding: 10px;
 }
 
+#kanban {
+    margin: 10px;
+}
+
 .column {
     float: left;
     background-color: rgba(240, 255, 255, 0.6);
-    margin-left: 10px;
-    margin-right: 10px;
     border-radius: 15px;
-    width: 17%;
+    width: 19%;
+    margin-left: 9px;
+    margin-right: 9px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -32,7 +37,6 @@ h2 {
 
 .card {
     margin: 20px;
-    box-sizing: content-box;
     background-color: rgb(228, 245, 245);
     border-radius: 20px;
     padding: 15px;
@@ -59,9 +63,11 @@ h2 {
 .tag.front{
     background-color: green;
 }
+
 .tag.back{
     background-color: red;
 }
+
 .tag.device{
     background-color: rgb(255, 217, 0);
 }
